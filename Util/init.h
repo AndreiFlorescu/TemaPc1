@@ -1,6 +1,6 @@
 #ifndef INIT
 #define INIT
 
-char* readTask1 ();
+void readTask1 (char *);
 
 #endif

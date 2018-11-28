@@ -3,6 +3,7 @@
 #ifndef ENCODE
 #define ENCODE
 
-
+void solveTask1 (char *, char *);
+void printSolTask1 (char *);
 
 #endif
