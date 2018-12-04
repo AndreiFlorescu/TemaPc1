@@ -71,13 +71,3 @@ void solveTask1 (char *sir, char *sol) {
 		prec = act;
 	} 
 }
-
-void printSolTask1 (char *sir) {
-	int i;
-	int l = strlen (sir);
-
-	for (i = 0; i < l; ++i) {
-		printf ("%c", sir[i]);
-	}
-	printf ("\n");
-}
