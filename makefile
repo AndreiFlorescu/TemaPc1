@@ -1,5 +1,5 @@
-build: telefon.c ./Codif/encode.c ./Decodif/decode.c ./Util/init.c
-	gcc -Wall telefon.c ./Codif/encode.c ./Decodif/decode.c ./Util/init.c -o telefon
+build: telefon.c ./Codif/encode.c ./Decodif/decode.c ./AutoCorrect/dex.c ./Util/init.c
+	gcc -Wall telefon.c ./Codif/encode.c ./Decodif/decode.c ./AutoCorrect/dex.c ./Util/init.c -o telefon
 
 run: telefon
 	./telefon

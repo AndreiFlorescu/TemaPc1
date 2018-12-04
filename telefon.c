@@ -6,20 +6,30 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "Util/init.h"
 #include "Codif/encode.h"
 #include "Decodif/decode.h"
+#include "AutoCorrect/dex.h"
 
 int main () {
-
 // Citiri -----------------------------------------------------
 // Task 1 -----------------------------------------------------
 	char *sir1 = calloc (101, sizeof(char));
-	readTask1(sir1);		// Citirea sirului pentru cerinta 1
+	readStr(sir1, 101);		// Citirea sirului pentru cerinta 1
 
 // Task 2 -----------------------------------------------------
 	char *sir2 = calloc (301, sizeof(char));
-	readTask2(sir2);		// Citirea sirului pentru cerinta 2
+	readStr(sir2, 301);		// Citirea sirului pentru cerinta 2
+
+// Task 3 -----------------------------------------------------
+	char *sir3 = calloc (101, sizeof(char));
+	readStr(sir3, 101);
+	int n;
+	scanf ("%d", &n);
+	
+// Task 4 -----------------------------------------------------
+
 
 
 // Rezolvari --------------------------------------------------
@@ -34,13 +44,25 @@ int main () {
 	char *sol2 = calloc (101, sizeof(char));
 	solveTask2(sir2, telef, sol2);
 
+// Task 3 -----------------------------------------------------
+	char *sol3 = calloc (101, sizeof(char));
+	solveTask3 (sir3, n, sol3);
+
+// Task 4 -----------------------------------------------------
+
+
 
 // Printari solutii -------------------------------------------
 // Task 1 -----------------------------------------------------
-	printSolTask1(sol1);			// Afisarea solutie task 1
+	printSolStr(sol1);			// Afisarea solutie task 1
 
 // Task 2 -----------------------------------------------------
-	printSolTask2(sol2);			// Afisarea solutie task 2
-	
+	printSolStr(sol2);			// Afisarea solutie task 2
+
+// Task 3 -----------------------------------------------------
+	printSolStr(sol3);			// Afisarea solutie task 3
+
+// Task 4 -----------------------------------------------------
+
 	return 0; 
 }
