@@ -6,7 +6,7 @@
 
 void solveTask2(char *sir, char telef[][5], char *sol) {
 	int i = 0;
-	int l = strlen(sir) - 1;
+	int l = strlen(sir);
 	int upper;
 	int act, count;
 	int poz = 0;

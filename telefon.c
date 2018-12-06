@@ -8,9 +8,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Util/init.h"
+#include "Util/defTypes.h"
 #include "Codif/encode.h"
 #include "Decodif/decode.h"
 #include "AutoCorrect/dex.h"
+
 
 int main () {
 // Citiri -----------------------------------------------------
@@ -27,9 +29,11 @@ int main () {
 	readStr(sir3, 101);
 	int n;
 	scanf ("%d", &n);
+
+	dex *cuv = malloc ((n + 1) * sizeof(dex));
+	readDex(cuv, n);
 	
 // Task 4 -----------------------------------------------------
-
 
 
 // Rezolvari --------------------------------------------------
@@ -46,7 +50,7 @@ int main () {
 
 // Task 3 -----------------------------------------------------
 	char *sol3 = calloc (101, sizeof(char));
-	solveTask3 (sir3, n, sol3);
+	solveTask3 (sir3, cuv, n, sol3);
 
 // Task 4 -----------------------------------------------------
 

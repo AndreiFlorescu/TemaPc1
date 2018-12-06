@@ -6,7 +6,7 @@
 
 void solveTask1 (char *sir, char *sol) {
 	int poz = 0;
-	int l = strlen(sir) - 1;
+	int l = strlen(sir);
 	int i, j;
 	
 	int prec = 1, flag;
