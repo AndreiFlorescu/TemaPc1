@@ -55,16 +55,22 @@ int main () {
 // Task 4 -----------------------------------------------------
 
 
-
 // Printari solutii -------------------------------------------
 // Task 1 -----------------------------------------------------
 	printSolStr(sol1);			// Afisarea solutie task 1
+	free(sir1);
+	free(sol1);
 
 // Task 2 -----------------------------------------------------
 	printSolStr(sol2);			// Afisarea solutie task 2
+	free(sir2);
+	free(sol2);
 
 // Task 3 -----------------------------------------------------
 	printSolStr(sol3);			// Afisarea solutie task 3
+	free(sir3);
+	free(cuv);
+	free(sol3);
 
 // Task 4 -----------------------------------------------------
 
