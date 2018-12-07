@@ -50,4 +50,5 @@ void readDex (dex *cuv, int n) {
 		l = strlen(cuv[i].new);
 		cuv[i].new = realloc (cuv[i].new, l * sizeof(char));
 	}
+	scanf ("\n");
 }
