@@ -104,8 +104,8 @@ void solveTask4 (char *sir) {
 			printf ("%d ", magicN[i]);
 		}
 		printf ("\n");
+		free(magicN);
 	}
 	
 	free(comp);
-	free(magicN);
 }
