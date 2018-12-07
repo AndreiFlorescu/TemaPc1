@@ -107,4 +107,5 @@ void solveTask4 (char *sir) {
 	}
 	
 	free(comp);
+	free(magicN);
 }
