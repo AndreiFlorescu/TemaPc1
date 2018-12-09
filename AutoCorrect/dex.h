@@ -1,3 +1,5 @@
+/* Headerul care contine functiile necesare taskului 3 - DEX */
+
 #ifndef DEX
 #define DEX
 

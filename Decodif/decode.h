@@ -1,3 +1,5 @@
+/* Headerul care contine functiile necesare taskului 2 - DECODE */
+
 #ifndef DECODE
 #define DECODE
 

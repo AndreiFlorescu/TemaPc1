@@ -20,12 +20,14 @@ void solveTask1 (char *sir, char *sol) {
 			continue;
 		}
 
+		// Verificam daca e litera mare
 		if (sir[i] >= 'A' && sir[i] <= 'Z') {
 			sol[poz++] = '1';
 			sir[i] += 32;
 			flag = 1;
 		}
 
+		// Caz particular s
 		if (sir[i] == 's') {
 			if (prec == 7 && flag != 1) {
 				sol[poz++] = '#';
@@ -39,6 +41,7 @@ void solveTask1 (char *sir, char *sol) {
 			continue;
 		}
 
+		// Caz particular z
 		if (sir[i] == 'z') {
 			if (prec == 9 && flag != 1) {
 				sol[poz++] = '#';
@@ -56,14 +59,17 @@ void solveTask1 (char *sir, char *sol) {
 			sir[i]--;
 		}
 
+		// Analizam pozitia in telef
 		int act = (sir[i] - 'a') / 3;
 		int loc = (sir[i] - 'a') % 3;
 		act += 2; 
 
+		// Verificam daca e nevoie de separatorul #
 		if (act == prec && flag != 1) {
 			sol[poz++] = '#';
 		}
 
+		// Adaugam cifrele necesare in vectorul solutie
 		for (j = 0; j <= loc; ++j) {
 			sol[poz++] = act + '0';
 		}

@@ -1,3 +1,5 @@
+/* Functiile care se ocupa de citire, afisarea si initializarea */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

@@ -1,13 +1,17 @@
+/* Functiile pentru rezolvarea task 4 */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <limits.h>
 #include "prpf.h"
 
+// Ordoneaza descrescator 
 int cmp (const void *a, const void *b) {
 	return ( *(int *) b - *(int *) a );
 }
 
+// Verifica daca toate componentel sunt prime intre ele
 int isPrime (long long n, int dim, long long *comp) {
 	long long i, j;
 	int count;
@@ -25,6 +29,7 @@ int isPrime (long long n, int dim, long long *comp) {
 	return 1;
 }
 
+// Rezolvarea taskului 4 
 void solveTask4 (char *sir) {
 	int i;
 	int n = 0, k = 0, count = 0;
@@ -35,6 +40,7 @@ void solveTask4 (char *sir) {
 	long long max = 0, act = 0;
 	long long min = LLONG_MAX;
 
+// Crearea vectorului de componente
 	for (i = 0; i < l; ++i) {
 		if (sir[i] != '#') {
 			n += sir[i] - '0';
@@ -77,6 +83,7 @@ void solveTask4 (char *sir) {
 // Afisarea daca numerele sunt prime intre ele
 	printf ("%d\n", isPrime(min, k, comp));
 
+// Crearea vectorului de numere magice
 	n %= 9;
 	if (n == 0 || count % n != 0) {
 		printf ("0\n");
@@ -100,6 +107,7 @@ void solveTask4 (char *sir) {
 		
 		qsort(magicN, poz, sizeof(int), cmp);
 
+// Afisarea numerelor magice in ordine descrescatoare
 		for (i = 0; i < poz; ++i) {
 			printf ("%d ", magicN[i]);
 		}

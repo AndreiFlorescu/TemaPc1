@@ -1,3 +1,5 @@
+/* Headerul care contine structura dex - DEFTYPES */
+
 #ifndef DEFTYPES
 #define DEFTYPES
 

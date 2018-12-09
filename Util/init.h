@@ -1,3 +1,5 @@
+/* Headerul care contine functiile de citire, afisarea si initializarea - INIT */
+
 #ifndef INIT
 #define INIT
 

@@ -1,8 +1,8 @@
-/*--------------------------------
-	Subiect:	Tema 1 - PC
+/*----------------------------------
+	Subiect:	Tema 1 - Telefon  
 	Autor:		Andrei Florescu
 	Grupa:		315 CC
---------------------------------*/
+----------------------------------*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -49,7 +49,7 @@ int main () {
 
 // Rezolvari --------------------------------------------------
 // Task 1 -----------------------------------------------------	
-	solveTask1(sir1, sol1);		// Rezolvarea primei cerinte 
+	solveTask1(sir1, sol1); 
 
 // Task 2 -----------------------------------------------------
 	char telef[10][5];
@@ -65,27 +65,27 @@ int main () {
 	solveTask1(sir4, cod);
 
 
-// Printari solutii -------------------------------------------
+// Afisari solutii --------------------------------------------
 // Task 1 -----------------------------------------------------
-	printSolStr(sol1);			// Afisarea solutie task 1
+	printSolStr(sol1);
 	free(sir1);
 	free(sol1);
 
 // Task 2 -----------------------------------------------------
-	printSolStr(sol2);			// Afisarea solutie task 2
+	printSolStr(sol2);
 	free(sir2);
 	free(sol2);
 
 // Task 3 -----------------------------------------------------
-	printSolStr(sol3);			// Afisarea solutie task 3
+	printSolStr(sol3);
 	free(sir3);
 	free(cuv);
 	free(aux);
 	free(sol3);
 
 // Task 4 -----------------------------------------------------
-	solveTask4(cod);
-	free(sir4);
+	solveTask4(cod);		// Afisarea se realizeaza in rezolvare
+	free(sir4);				
 	free(cod);
 
 	return 0; 

@@ -5,6 +5,7 @@
 #include <string.h>
 #include "dex.h"
 
+// Rezolvarea taskului 3
 void solveTask3 (char *sir, dex *cuv, int n, char *sol) {
 	int i;
 	char *p;
@@ -12,6 +13,8 @@ void solveTask3 (char *sir, dex *cuv, int n, char *sol) {
 
 	p = strtok(sir, " ");
 
+	/* Trecem prin sir cuvant cu cuvant si verificam daca acesta apare in dictionar
+	   Daca da il inlocuim, daca nu salvam cuvantul actual si trecem la urmatorul */
 	while (p != NULL) {
 		flag = 0;
 		for (i = 0; i < n; ++i) {
