@@ -75,5 +75,5 @@ void solveTask1 (char *sir, char *sol) {
 		}
 
 		prec = act;
-	} 
+	}
 }

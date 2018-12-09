@@ -79,7 +79,7 @@ int main () {
 // Task 3 -----------------------------------------------------
 	printSolStr(sol3);
 	free(sir3);
-	free(cuv);
+	freeDex(cuv, n);
 	free(aux);
 	free(sol3);
 

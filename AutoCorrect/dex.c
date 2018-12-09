@@ -11,6 +11,11 @@ void solveTask3 (char *sir, dex *cuv, int n, char *sol) {
 	char *p;
 	int flag;
 
+	if (n == 0) {
+		strcpy(sol, sir);
+		return;
+	}
+
 	p = strtok(sir, " ");
 
 	/* Trecem prin sir cuvant cu cuvant si verificam daca acesta apare in dictionar

@@ -15,7 +15,24 @@ int cmp (const void *a, const void *b) {
 int isPrime (long long n, int dim, long long *comp) {
 	long long i, j;
 	int count;
-	for (i = 2; i <= n; ++i) {
+
+	// Daca avem un singur element nu are rost sa analizam
+	if (dim == 1) {
+		return 1;
+	}
+
+	// Caz particular pentru 2 
+	count = 0;
+	for (j = 0; j < dim; ++j) {
+		if (comp[j] % 2 == 0) {
+			count++;
+		}
+	}
+	if (count > 1) {
+		return 0;
+	}
+
+	for (i = 3; i <= n; i += 2) {
 		count = 0;
 		for (j = 0; j < dim; ++j) {
 			if (comp[j] % i == 0) {
@@ -35,7 +52,7 @@ void solveTask4 (char *sir) {
 	int n = 0, k = 0, count = 0;
 	int l = strlen(sir);
 	int poz;
-	long long *comp = malloc (5 * sizeof(long long));
+	long long *comp = malloc (51 * sizeof(long long));
 
 	long long max = 0, act = 0;
 	long long min = LLONG_MAX;
